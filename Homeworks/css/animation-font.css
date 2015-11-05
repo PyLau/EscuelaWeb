@@ -1,0 +1,1261 @@
+@font-face{
+	font-family: invaders;
+    src: url(../fonts/invaders.ttf);
+}
+
+body{
+    background: #000;
+}
+.space{
+    position: absolute;
+    margin: 50px 150px 0 150px;
+    width: 900px;
+    height: 600px;
+    font-size: 50px;
+    font-family: invaders;
+}
+
+.blocks{
+	position: absolute;
+    left: 100px;
+    bottom: 140px;
+}
+
+.blocks:nth-child(2){
+	left: 300px;
+}
+
+.blocks:nth-child(3){
+	left: 500px;
+}
+
+.blocks:last-child{
+    left: 700px;
+}
+
+.ship{
+     color: #00ffff;
+     bottom: 10px;
+     font-size: 60px;
+     position: absolute;
+}
+.movement:after{
+    content:"";
+    position: absolute;
+    -webkit-animation:ship-movement 30s;
+    animation: ship-movement 30s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-delay:0.75s;
+    -webkit-animation-delay:0.75s;
+}
+
+@keyframes ship-movement{
+    0%  {left: 0px; content:"w";}
+    9%  {left: 230px; content:"w";}
+    18% {left: 600px; content:"w";}
+    27% {left: 770px; content:"w";}
+    36% {left: 400px; content:"w";} 
+    45% {left: 450px; content:"w";}
+    54% {left: 450px; content:"w";}
+    63% {left: 450px; content:"w";}
+    72% {left: 450px; content:"w";} 
+    81% {left: 500px; content:"w";}
+    90% {left: 600px; content:"w";}
+    99% {left: 750px; content:"w";}
+}
+
+.shot:after{
+    content:"";
+    font-size: 15px;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    left: 230px;
+    -webkit-animation:shot-movement 1.5s;
+    animation: shot-movement 1.5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    animation-delay:2.5s;
+    -webkit-animation-delay:2.5s;
+}
+
+@keyframes shot-movement{
+    0%  {bottom: 5px;content:"|";}
+    30% {bottom: 100px;content:"|"; color: rgb(189,41,91);}
+    60% {bottom: 200px;content:"|"; color: rgb(189,41,91);}
+    100%{opacity: 1; bottom: 300px;content:"|";color: #ff00ff;}
+}
+
+.de:after{
+    content:"";
+    position: absolute;
+    color: #06ff00; 
+    top:0px;
+}
+.de:first-child:after{
+    -webkit-animation:invader-de 11s;
+    animation:invader-de 11s;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+
+.de:nth-child(2):after{
+    -webkit-animation:invader-de-second 11s;
+    animation:invader-de-second 11s;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+
+.de:nth-child(3):after{
+    -webkit-animation:invader-de-third 11s;
+    animation:invader-de-third 11s;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+
+.de:nth-child(4):after{
+    -webkit-animation:invader-de-fourth 11s;
+    animation:invader-de-fourth 11s;
+        animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+
+.de:nth-child(5):after{
+    -webkit-animation:invader-de-fifth 11s;
+    animation:invader-de-fifth 11s;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+
+.de:nth-child(6):after{
+    -webkit-animation:invader-de-sixth 11s;
+    animation:invader-de-sixth 11s;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+
+.de:nth-child(7):after{
+    -webkit-animation:invader-de-seventh 11s;
+    animation:invader-de-seventh 11s;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+/*------------> FIRST DOWN <---------------*/
+.down-de:after{
+    content:"";
+    position: absolute;
+    color: #06ff00; 
+    top:50px;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.down-de:first-child:after{
+    -webkit-animation:invader-de 11s;
+    animation:invader-de 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.6s;
+    -webkit-animation-delay:11.6s;
+}
+
+.down-de:nth-child(2):after{
+    -webkit-animation:invader-de-second 11s;
+    animation:invader-de-second 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.6s;
+    -webkit-animation-delay:11.6s;
+}
+
+.down-de:nth-child(3):after{
+    -webkit-animation:invader-de-third 11s;
+    animation:invader-de-third 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.6s;
+    -webkit-animation-delay:11.6s;
+}
+
+.down-de:nth-child(4):after{
+    -webkit-animation:invader-de-fourth 11s;
+    animation:invader-de-fourth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.6s;
+    -webkit-animation-delay:11.6s;
+}
+
+.down-de:nth-child(5):after{
+    -webkit-animation:invader-de-fifth 11s;
+    animation:invader-de-fifth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.6s;
+    -webkit-animation-delay:11.6s;
+}
+
+.down-de:nth-child(6):after{
+    -webkit-animation:invader-de-sixth 11s;
+    animation:invader-de-sixth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.6s;
+    -webkit-animation-delay:11.6s;
+}
+
+.down-de:nth-child(7):after{
+    -webkit-animation:invader-de-seventh 11s;
+    animation:invader-de-seventh 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.6s;
+    -webkit-animation-delay:11.6s;
+}
+
+@keyframes invader-de{
+    0%  {left: 0px; content:"d";}
+    9%  {left: 25px; content:"e";}
+    18% {left: 50px; content:"d";}
+    27% {left: 75px; content:"e";}
+    36% {left: 100px; content:"d";}
+    45% {left: 125px; content:"e";}
+    54% {left: 150px; content:"d";}
+    63% {left: 175px; content:"e";}
+    72% {left: 200px; content:"d";}
+    81% {left: 225px; content:"e";}
+    90% {left: 250px; content:"d";}
+    99% {left: 275px; content:"e";}
+}
+
+@keyframes invader-de-second{
+    0%  {left: 100px; content:"d";}
+    9%  {left: 125px; content:"e";}
+    18% {left: 150px; content:"d";}
+    27% {left: 175px; content:"e";}
+    36% {left: 200px; content:"d";}
+    45% {left: 225px; content:"e";}
+    54% {left: 250px; content:"d";}
+    63% {left: 275px; content:"e";}
+    72% {left: 300px; content:"d";}
+    81% {left: 325px; content:"e";}
+    90% {left: 350px; content:"d";}
+    99% {left: 375px; content:"e";}
+}
+
+@keyframes invader-de-third{
+    0%  {left: 200px; content:"d";}
+    9%  {left: 225px; content:"e";}
+    18% {left: 250px; content:"d";}
+    27% {left: 275px; content:"e";}
+    36% {left: 300px; content:"d";}
+    45% {left: 325px; content:"e";}
+    54% {left: 350px; content:"d";}
+    63% {left: 375px; content:"e";}
+    72% {left: 400px; content:"d";}
+    81% {left: 425px; content:"e";}
+    90% {left: 450px; content:"d";}
+    99% {left: 475px; content:"e";}
+}
+
+@keyframes invader-de-fourth{
+    0%  {left: 300px; content:"d";}
+    9%  {left: 325px; content:"e";}
+    18% {left: 350px; content:"d";}
+    27% {left: 375px; content:"e";}
+    36% {left: 400px; content:"d";}
+    45% {left: 425px; content:"e";}
+    54% {left: 450px; content:"d";}
+    63% {left: 475px; content:"e";}
+    72% {left: 500px; content:"d";}
+    81% {left: 525px; content:"e";}
+    90% {left: 550px; content:"d";}
+    99% {left: 575px; content:"e";}
+}   
+
+@keyframes invader-de-fifth{
+    0%  {left: 400px; content:"d";}
+    9%  {left: 425px; content:"e";}
+    18% {left: 450px; content:"d";}
+    27% {left: 475px; content:"e";}
+    36% {left: 500px; content:"d";}
+    45% {left: 525px; content:"e";}
+    54% {left: 550px; content:"d";}
+    63% {left: 575px; content:"e";}
+    72% {left: 600px; content:"d";}
+    81% {left: 625px; content:"e";}
+    90% {left: 650px; content:"d";}
+    99% {left: 675px; content:"e";}
+}
+
+@keyframes invader-de-sixth{
+
+    0%  {left: 500px; content:"d";}
+    9%  {left: 525px; content:"e";}
+    18% {left: 550px; content:"d";}
+    27% {left: 575px; content:"e";}
+    36% {left: 600px; content:"d";}
+    45% {left: 625px; content:"e";}
+    54% {left: 650px; content:"d";}
+    63% {left: 675px; content:"e";}
+    72% {left: 700px; content:"d";}   
+    81% {left: 725px; content:"e";}
+    90% {left: 750px; content:"d";}
+    99% {left: 775px; content:"e";}
+}
+
+@keyframes invader-de-seventh{
+    0%  {left: 600px; content:"d";}
+    9%  {left: 625px; content:"e";}
+    18% {left: 650px; content:"d";}
+    27% {left: 675px; content:"e";}
+    36% {left: 700px; content:"d";} 
+    45% {left: 725px; content:"e";}
+    54% {left: 750px; content:"d";}
+    63% {left: 775px; content:"e";}
+    72% {left: 800px; content:"d";} 
+    81% {left: 825px; content:"e";}
+    90% {left: 850px; content:"d";}
+    99% {left: 875px; content:"e";}
+    }
+
+@-webkit-keyframes invader-de{
+    0%  {left: 0px; content:"d";}
+    9%  {left: 25px; content:"e";}
+    18% {left: 50px; content:"d";}
+    27% {left: 75px; content:"e";}
+    36% {left: 100px; content:"d";}
+    45% {left: 125px; content:"e";}
+    54% {left: 150px; content:"d";}
+    63% {left: 175px; content:"e";}
+    72% {left: 200px; content:"d";}
+    81% {left: 225px; content:"e";}
+    90% {left: 250px; content:"d";}
+    99% {left: 275px; content:"e";}
+}
+
+@-webkit-keyframes invader-de-second{
+    0%  {left: 100px; content:"d";}
+    9%  {left: 125px; content:"e";}
+    18% {left: 150px; content:"d";}
+    27% {left: 175px; content:"e";}
+    36% {left: 200px; content:"d";}
+    45% {left: 225px; content:"e";}
+    54% {left: 250px; content:"d";}
+    63% {left: 275px; content:"e";}
+    72% {left: 300px; content:"d";}
+    81% {left: 325px; content:"e";}
+    90% {left: 350px; content:"d";}
+    99% {left: 375px; content:"e";}
+}
+
+@-webkit-keyframes invader-de-third{
+    0%  {left: 200px; content:"d";}
+    9%  {left: 225px; content:"e";}
+    18% {left: 250px; content:"d";}
+    27% {left: 275px; content:"e";}
+    36% {left: 300px; content:"d";}
+    45% {left: 325px; content:"e";}
+    54% {left: 350px; content:"d";}
+    63% {left: 375px; content:"e";}
+    72% {left: 400px; content:"d";}
+    81% {left: 425px; content:"e";}
+    90% {left: 450px; content:"d";}
+    99% {left: 475px; content:"e";}
+}
+
+@-webkit-keyframes invader-de-fourth{
+    0%  {left: 300px; content:"d";}
+    9%  {left: 325px; content:"e";}
+    18% {left: 350px; content:"d";}
+    27% {left: 375px; content:"e";}
+    36% {left: 400px; content:"d";}
+    45% {left: 425px; content:"e";}
+    54% {left: 450px; content:"d";}
+    63% {left: 475px; content:"e";}
+    72% {left: 500px; content:"d";}
+    81% {left: 525px; content:"e";}
+    90% {left: 550px; content:"d";}
+    99% {left: 575px; content:"e";}
+}   
+
+@-webkit-keyframes invader-de-fifth{
+    0%  {left: 400px; content:"d";}
+    9%  {left: 425px; content:"e";}
+    18% {left: 450px; content:"d";}
+    27% {left: 475px; content:"e";}
+    36% {left: 500px; content:"d";}
+    45% {left: 525px; content:"e";}
+    54% {left: 550px; content:"d";}
+    63% {left: 575px; content:"e";}
+    72% {left: 600px; content:"d";}
+    81% {left: 625px; content:"e";}
+    90% {left: 650px; content:"d";}
+    99% {left: 675px; content:"e";}
+}
+
+@-webkit-keyframes invader-de-sixth{
+
+    0%  {left: 500px; content:"d";}
+    9%  {left: 525px; content:"e";}
+    18% {left: 550px; content:"d";}
+    27% {left: 575px; content:"e";}
+    36% {left: 600px; content:"d";}
+    45% {left: 625px; content:"e";}
+    54% {left: 650px; content:"d";}
+    63% {left: 675px; content:"e";}
+    72% {left: 700px; content:"d";}   
+    81% {left: 725px; content:"e";}
+    90% {left: 750px; content:"d";}
+    99% {left: 775px; content:"e";}
+}
+
+@-webkit-keyframes invader-de-seventh{
+    0%  {left: 600px; content:"d";}
+    9%  {left: 625px; content:"e";}
+    18% {left: 650px; content:"d";}
+    27% {left: 675px; content:"e";}
+    36% {left: 700px; content:"d";} 
+    45% {left: 725px; content:"e";}
+    54% {left: 750px; content:"d";}
+    63% {left: 775px; content:"e";}
+    72% {left: 800px; content:"d";} 
+    81% {left: 825px; content:"e";}
+    90% {left: 850px; content:"d";}
+    99% {left: 875px; content:"e";}
+}
+
+.bc:after{
+    content:"";
+    position: absolute;
+    color: #06ff00; 
+    top:60px;
+}
+
+/*--------> GREEN <-----------*/
+.bc:first-child:after{
+    -webkit-animation:invader-bc 11s;
+    animation:invader-bc 11s;
+    animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+}
+
+.bc:nth-child(2):after{
+    -webkit-animation:invader-bc-second 11s;
+    animation:invader-bc-second 11s;
+    animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+}
+.bc:nth-child(3):after{
+    -webkit-animation:invader-bc-third 11s;
+    animation:invader-bc-third 11s;
+     animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+}
+
+.bc:nth-child(4):after{
+    -webkit-animation:invader-bc-fourth 11s;
+    animation:invader-bc-fourth 11s;
+      animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;  
+}
+
+.bc:nth-child(5):after{
+    -webkit-animation:invader-bc-fifth 11s;
+    animation:invader-bc-fifth 11s;
+    animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+}
+
+.bc:nth-child(6):after{
+    -webkit-animation:invader-bc-sixth 11s;
+    animation:invader-bc-sixth 11s;
+    animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+}
+
+.bc:nth-child(7):after{
+    -webkit-animation:invader-bc-seventh 11s;
+    animation:invader-bc-seventh 11s;
+    animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+}
+/*--------> BLUEEEEEEEEEEEE <-----------*/
+.bc:nth-child(8):after{
+    top: 120px;
+    color: #00ffff; 
+    -webkit-animation:invader-bc 11s;
+    animation:invader-bc 11s;
+    animation-delay:0.3s;
+    -webkit-animation-delay:0.3s;
+}
+
+.bc:nth-child(9):after{
+    top: 120px;
+    color: #00ffff; 
+    -webkit-animation:invader-bc-second 11s;
+    animation:invader-bc-second 11s;
+    animation-delay:0.3s;
+    -webkit-animation-delay:0.3s;
+}
+
+.bc:nth-child(10):after{
+    top: 120px;
+    color: #00ffff; 
+    -webkit-animation:invader-bc-third 11s;
+    animation:invader-bc-third 11s;
+    animation-delay:0.3s;
+    -webkit-animation-delay:0.3s;
+}
+
+.bc:nth-child(11):after{
+    top: 120px;
+    color: #00ffff; 
+    -webkit-animation:invader-bc-fourth 11s;
+    animation:invader-bc-fourth 11s;
+    animation-delay:0.3s;
+    -webkit-animation-delay:0.3s;
+}
+
+.bc:nth-child(12):after{
+    top: 120px;
+    color: #00ffff; 
+    -webkit-animation:invader-bc-fifth 11s;
+    animation:invader-bc-fifth 11s;
+    animation-delay:0.3s;
+    -webkit-animation-delay:0.3s;
+}
+.bc:nth-child(13):after{
+    top: 120px;
+    color: #00ffff; 
+    -webkit-animation:invader-bc-sixth 11s;
+    animation:invader-bc-sixth 11s;
+    animation-delay:0.3s;
+    -webkit-animation-delay:0.3s;
+}
+
+.bc:nth-child(14):after{
+    top: 120px;
+    color: #00ffff; 
+    -webkit-animation:invader-bc-seventh 11s;
+    animation:invader-bc-seventh 11s;
+    animation-delay:0.3s;
+    -webkit-animation-delay:0.3s;
+}
+
+.down-bc:after{
+    content:"";
+    position: absolute;
+    top:170px;
+    color: #00ffff; 
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+    /*PRETTY BLUE ALIEN*/
+.down-bc:nth-child(1):after{
+    -webkit-animation:invader-bc 11s;
+    animation:invader-bc 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.4s;
+    -webkit-animation-delay:11.4s;
+}
+
+.down-bc:nth-child(2):after{
+    -webkit-animation:invader-bc-second 11s;
+    animation:invader-bc-second 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.4s;
+    -webkit-animation-delay:11.4s;
+}
+
+.down-bc:nth-child(3):after{
+    -webkit-animation:invader-bc-third 11s;
+    animation:invader-bc-third 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.4s;
+    -webkit-animation-delay:11.4s;
+}
+.down-bc:nth-child(4):after{
+    -webkit-animation:invader-bc-fourth 11s;
+    animation:invader-bc-fourth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.4s;
+    -webkit-animation-delay:11.4s;
+}
+
+.down-bc:nth-child(5):after{
+    -webkit-animation:invader-bc-fifth 11s;
+    animation:invader-bc-fifth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.4s;
+    -webkit-animation-delay:11.4s;
+}
+.down-bc:nth-child(6):after{
+    -webkit-animation:invader-bc-sixth 11s;
+    animation:invader-bc-sixth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.4s;
+    -webkit-animation-delay:11.4s;
+}
+.down-bc:nth-child(7):after{
+    -webkit-animation:invader-bc-seventh 11s;
+    animation:invader-bc-seventh 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.4s;
+    -webkit-animation-delay:11.4s;
+}
+.down-bc:nth-child(8):after{
+    top:110px;
+    color: #06ff00;
+    -webkit-animation:invader-bc 11s;
+    animation:invader-bc 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.5s;
+    -webkit-animation-delay:11.5s;
+}
+.down-bc:nth-child(9):after{
+    top:110px;
+    color: #06ff00;
+    -webkit-animation:invader-bc-second 11s;
+    animation:invader-bc-second 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.5s;
+    -webkit-animation-delay:11.5s;
+}
+
+.down-bc:nth-child(10):after{
+    top:110px;
+    color: #06ff00;
+    -webkit-animation:invader-bc-third 11s;
+    animation:invader-bc-third 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.5s;
+    -webkit-animation-delay:11.5s;
+}
+
+.down-bc:nth-child(11):after{
+    top:110px;
+    color: #06ff00;
+    -webkit-animation:invader-bc-fourth 11s;
+    animation:invader-bc-fourth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.5s;
+    -webkit-animation-delay:11.5s;
+}
+
+.down-bc:nth-child(12):after{
+    top:110px;
+    color: #06ff00;
+    -webkit-animation:invader-bc-fifth 11s;
+    animation:invader-bc-fifth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.5s;
+    -webkit-animation-delay:11.5s;
+}
+
+.down-bc:nth-child(13):after{
+    top:110px;
+    color: #06ff00;
+    -webkit-animation:invader-bc-sixth 11s;
+    animation:invader-bc-sixth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.5s;
+    -webkit-animation-delay:11.5s;
+}
+
+.down-bc:nth-child(14):after{
+    top:110px;
+    color: #06ff00;
+    -webkit-animation:invader-bc-seventh 11s;
+    animation:invader-bc-seventh 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    animation-delay:11.5s;
+    -webkit-animation-delay:11.5s;
+}
+
+/*--------> ANIMATIONS OF BLUE AND GREEN <-----------*/
+@keyframes invader-bc{
+    0%  {left: 0px; content:"b";}
+    9%  {left: 25px; content:"c";}
+    18% {left: 50px; content:"b";}
+    27% {left: 75px; content:"c";}
+    36% {left: 100px; content:"b";}
+    45% {left: 125px; content:"c";}
+    54% {left: 150px; content:"b";}
+    63% {left: 175px; content:"c";}
+    72% {left: 200px; content:"b";}
+    81% {left: 225px; content:"c";}
+    90% {left: 250px; content:"b";}
+    99% {left: 275px; content:"c";}
+}
+
+@keyframes invader-bc-second{
+    0%  {left: 100px; content:"b";}
+    9%  {left: 125px; content:"c";}
+    18% {left: 150px; content:"b";}
+    27% {left: 175px; content:"c";}
+    36% {left: 200px; content:"b";}
+    45% {left: 225px; content:"c";}
+    54% {left: 250px; content:"b";}
+    63% {left: 275px; content:"c";}
+    72% {left: 300px; content:"b";}
+    81% {left: 325px; content:"c";}
+    90% {left: 350px; content:"b";}
+    99% {left: 375px; content:"c";}
+}
+
+@keyframes invader-bc-third{
+    0%  {left: 200px; content:"b";}
+    9%  {left: 225px; content:"c";}
+    18% {left: 250px; content:"b";}
+    27% {left: 275px; content:"c";}
+    36% {left: 300px; content:"b";}
+    45% {left: 325px; content:"c";}
+    54% {left: 350px; content:"b";}
+    63% {left: 375px; content:"c";}
+    72% {left: 400px; content:"b";}
+    81% {left: 425px; content:"c";}
+    90% {left: 450px; content:"b";}
+    99% {left: 475px; content:"c";}
+}
+
+@keyframes invader-bc-fourth{
+    0%  {left: 300px; content:"b";}
+    9%  {left: 325px; content:"c";}
+    18% {left: 350px; content:"b";}
+    27% {left: 375px; content:"c";}
+    36% {left: 400px; content:"b";}
+    45% {left: 425px; content:"c";}
+    54% {left: 450px; content:"b";}
+    63% {left: 475px; content:"c";}
+    72% {left: 500px; content:"b";}
+    81% {left: 525px; content:"c";}
+    90% {left: 550px; content:"b";}
+    99% {left: 575px; content:"c";}
+}   
+
+@keyframes invader-bc-fifth{
+    0%  {left: 400px; content:"b";}
+    9%  {left: 425px; content:"c";}
+    18% {left: 450px; content:"b";}
+    27% {left: 475px; content:"c";}
+    36% {left: 500px; content:"b";}
+    45% {left: 525px; content:"c";}
+    54% {left: 550px; content:"b";}
+    63% {left: 575px; content:"c";}
+    72% {left: 600px; content:"b";}
+    81% {left: 625px; content:"c";}
+    90% {left: 650px; content:"b";}
+    99% {left: 675px; content:"c";}
+}
+
+@keyframes invader-bc-sixth{
+
+    0%  {left: 500px; content:"b";}
+    9%  {left: 525px; content:"c";}
+    18% {left: 550px; content:"b";}
+    27% {left: 575px; content:"c";}
+    36% {left: 600px; content:"b";}
+    45% {left: 625px; content:"c";}
+    54% {left: 650px; content:"b";}
+    63% {left: 675px; content:"c";}
+    72% {left: 700px; content:"b";}   
+    81% {left: 725px; content:"c";}
+    90% {left: 750px; content:"b";}
+    99% {left: 775px; content:"c";}
+}
+
+@keyframes invader-bc-seventh{
+    0%  {left: 600px; content:"b";}
+    9%  {left: 625px; content:"c";}
+    18% {left: 650px; content:"b";}
+    27% {left: 675px; content:"c";}
+    36% {left: 700px; content:"b";} 
+    45% {left: 725px; content:"c";}
+    54% {left: 750px; content:"b";}
+    63% {left: 775px; content:"c";}
+    72% {left: 800px; content:"b";} 
+    81% {left: 825px; content:"c";}
+    90% {left: 850px; content:"b";}
+    99% {left: 875px; content:"c";}
+}
+
+@-webkit-keyframes invader-bc{
+    0%  {left: 0px; content:"b";}
+    9%  {left: 25px; content:"c";}
+    18% {left: 50px; content:"b";}
+    27% {left: 75px; content:"c";}
+    36% {left: 100px; content:"b";}
+    45% {left: 125px; content:"c";}
+    54% {left: 150px; content:"b";}
+    63% {left: 175px; content:"c";}
+    72% {left: 200px; content:"b";}
+    81% {left: 225px; content:"c";}
+    90% {left: 250px; content:"b";}
+    99% {left: 275px; content:"c";}
+}
+
+@-webkit-keyframes invader-bc-second{
+    0%  {left: 100px; content:"b";}
+    9%  {left: 125px; content:"c";}
+    18% {left: 150px; content:"b";}
+    27% {left: 175px; content:"c";}
+    36% {left: 200px; content:"b";}
+    45% {left: 225px; content:"c";}
+    54% {left: 250px; content:"b";}
+    63% {left: 275px; content:"c";}
+    72% {left: 300px; content:"b";}
+    81% {left: 325px; content:"c";}
+    90% {left: 350px; content:"b";}
+    99% {left: 375px; content:"c";}
+}
+
+@-webkit-keyframes invader-bc-third{
+    0%  {left: 200px; content:"b";}
+    9%  {left: 225px; content:"c";}
+    18% {left: 250px; content:"b";}
+    27% {left: 275px; content:"c";}
+    36% {left: 300px; content:"b";}
+    45% {left: 325px; content:"c";}
+    54% {left: 350px; content:"b";}
+    63% {left: 375px; content:"c";}
+    72% {left: 400px; content:"b";}
+    81% {left: 425px; content:"c";}
+    90% {left: 450px; content:"b";}
+    99% {left: 475px; content:"c";}
+}
+
+@-webkit-keyframes invader-bc-fourth{
+    0%  {left: 300px; content:"b";}
+    9%  {left: 325px; content:"c";}
+    18% {left: 350px; content:"b";}
+    27% {left: 375px; content:"c";}
+    36% {left: 400px; content:"b";}
+    45% {left: 425px; content:"c";}
+    54% {left: 450px; content:"b";}
+    63% {left: 475px; content:"c";}
+    72% {left: 500px; content:"b";}
+    81% {left: 525px; content:"c";}
+    90% {left: 550px; content:"b";}
+    99% {left: 575px; content:"c";}
+}   
+
+@-webkit-keyframes invader-bc-fifth{
+    0%  {left: 400px; content:"b";}
+    9%  {left: 425px; content:"c";}
+    18% {left: 450px; content:"b";}
+    27% {left: 475px; content:"c";}
+    36% {left: 500px; content:"b";}
+    45% {left: 525px; content:"c";}
+    54% {left: 550px; content:"b";}
+    63% {left: 575px; content:"c";}
+    72% {left: 600px; content:"b";}
+    81% {left: 625px; content:"c";}
+    90% {left: 650px; content:"b";}
+    99% {left: 675px; content:"c";}
+}
+
+@-webkit-keyframes invader-bc-sixth{
+
+    0%  {left: 500px; content:"b";}
+    9%  {left: 525px; content:"c";}
+    18% {left: 550px; content:"b";}
+    27% {left: 575px; content:"c";}
+    36% {left: 600px; content:"b";}
+    45% {left: 625px; content:"c";}
+    54% {left: 650px; content:"b";}
+    63% {left: 675px; content:"c";}
+    72% {left: 700px; content:"b";}   
+    81% {left: 725px; content:"c";}
+    90% {left: 750px; content:"b";}
+    99% {left: 775px; content:"c";}
+}
+
+@-webkit-keyframes invader-bc-seventh{
+    0%  {left: 600px; content:"b";}
+    9%  {left: 625px; content:"c";}
+    18% {left: 650px; content:"b";}
+    27% {left: 675px; content:"c";}
+    36% {left: 700px; content:"b";} 
+    45% {left: 725px; content:"c";}
+    54% {left: 750px; content:"b";}
+    63% {left: 775px; content:"c";}
+    72% {left: 800px; content:"b";} 
+    81% {left: 825px; content:"c";}
+    90% {left: 850px; content:"b";}
+    99% {left: 875px; content:"c";}
+}
+
+/*-----------> BLUE FG <--------------*/
+.fg:after{
+    content:"";
+    top: 180px;
+    color: #00ffff;
+    position: absolute;
+}
+.fg:nth-child(1):after{
+    -webkit-animation:invader-fg 11s;
+    animation:invader-fg 11s;
+    animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+}
+.fg:nth-child(2):after{
+    -webkit-animation:invader-fg-second 11s;
+    animation:invader-fg-second 11s;
+    animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+}
+.fg:nth-child(3):after{
+    -webkit-animation:invader-fg-third 11s;
+    animation:invader-fg-third 11s;
+    animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+}
+.fg:nth-child(4):after{
+    -webkit-animation:invader-fg-fourth 11s;
+    animation:invader-fg-fourth 11s;
+    animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+}
+.fg:nth-child(5):after{
+    -webkit-animation:invader-fg-fifth 11s;
+    animation:invader-fg-fifth 11s;
+    animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+}
+.fg:nth-child(6):after{
+    -webkit-animation:invader-fg-sixth 11s;
+    animation:invader-fg-sixth 11s;
+    animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+}
+.fg:nth-child(7):after{
+    -webkit-animation:invader-fg-seventh 11s;
+    animation:invader-fg-seventh 11s;
+    animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+}
+/*-----------> FUCSIA FG <--------------*/
+.fg:nth-child(8):after{
+    top: 240px;
+    color: #ff00ff;
+    -webkit-animation:invader-fg 11s;
+    animation:invader-fg 11s;
+    animation-delay:0.1s;
+    -webkit-animation-delay:0.1s;
+}
+
+.fg:nth-child(9):after{
+    top: 240px;
+    color: #ff00ff;
+    -webkit-animation:invader-fg-second 11s;
+    animation:invader-fg-second 11s;
+    animation-delay:0.1s;
+    -webkit-animation-delay:0.1s;
+}
+
+.fg:nth-child(10):after{
+    top: 240px;
+    color: #ff00ff;
+    -webkit-animation:invader-fg-third 11s;
+    animation:invader-fg-third 11s;
+    animation-delay:0.1s;
+    -webkit-animation-delay:0.1s;
+}
+
+.fg:nth-child(11):after{
+    top: 240px;
+    color: #ff00ff;
+    -webkit-animation:invader-fg-fourth 11s;
+    animation:invader-fg-fourth 11s;
+    animation-delay:0.1s;
+    -webkit-animation-delay:0.1s;
+}
+
+.fg:nth-child(12):after{
+    top: 240px;
+    color: #ff00ff;
+    -webkit-animation:invader-fg-fifth 11s;
+    animation:invader-fg-fifth 11s;
+    animation-delay:0.1s;
+    -webkit-animation-delay:0.1s;
+}
+.fg:nth-child(13):after{
+    top: 240px;
+    color: #ff00ff;
+    -webkit-animation:invader-fg-sixth 11s;
+    animation:invader-fg-sixth 11s;
+    animation-delay:0.1s;
+    -webkit-animation-delay:0.1s;
+}
+.fg:nth-child(14):after{
+    top: 240px;
+    color: #ff00ff;
+    -webkit-animation:invader-fg-seventh 11s;
+    animation:invader-fg-seventh 11s;
+    animation-delay:0.1s;
+    -webkit-animation-delay:0.1s;
+}
+/*-----------> DOWN BLUE FG <--------------*/
+.down-fg:after{
+    content:"";
+    top:300px;
+    color: #ff00ff;
+    position: absolute;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+.down-fg:first-child:after{
+    -webkit-animation:invader-fg 11s;
+    animation:invader-fg 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.2s;
+    animation-delay:11.2s;
+}
+
+.down-fg:nth-child(2):after{
+    -webkit-animation:invader-fg-second 11s;
+    animation:invader-fg-second 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.2s;
+    animation-delay:11.2s;
+}
+
+.down-fg:nth-child(3):after{
+    -webkit-animation:invader-fg-third 11s;
+    animation:invader-fg-third 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.2s;
+    animation-delay:11.2s;
+}
+
+.down-fg:nth-child(4):after{
+    -webkit-animation:invader-fg-fourth 11s;
+    animation:invader-fg-fourth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.2s;
+    animation-delay:11.2s;
+}
+
+.down-fg:nth-child(5):after{
+    -webkit-animation:invader-fg-fifth 11s;
+    animation:invader-fg-fifth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.2s;
+    animation-delay:11.2s;
+}
+.down-fg:nth-child(6):after{
+    -webkit-animation:invader-fg-sixth 11s;
+    animation:invader-fg-sixth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.2s;
+    animation-delay:11.2s;
+}
+.down-fg:nth-child(7):after{
+    -webkit-animation:invader-fg-seventh 11s;
+    animation:invader-fg-seventh 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.2s;
+    animation-delay:11.2s;
+}
+/*-----------> DOWN FUCSIA FG <--------------*/
+.down-fg:nth-child(8):after{
+    top:240px;
+    color: #00ffff;
+    -webkit-animation:invader-fg 11s;
+    animation:invader-fg 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.3s;
+    animation-delay:11.3s;
+}
+.down-fg:nth-child(9):after{
+    top:240px;
+    color: #00ffff;
+    -webkit-animation:invader-fg-second 11s;
+    animation:invader-fg-second 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.3s;
+    animation-delay:11.3s;
+}
+
+.down-fg:nth-child(10):after{
+    top:240px;
+    color: #00ffff;
+    -webkit-animation:invader-fg-third 11s;
+    animation:invader-fg-third 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.3s;
+    animation-delay:11.3s;
+}
+.down-fg:nth-child(11):after{
+    top:240px;
+    color: #00ffff;
+    -webkit-animation:invader-fg-fourth 11s;
+    animation:invader-fg-fourth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.3s;
+    animation-delay:11.3s;
+}
+.down-fg:nth-child(12):after{
+    top:240px;
+    color: #00ffff;
+    -webkit-animation:invader-fg-fifth 11s;
+    animation:invader-fg-fifth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.3s;
+    animation-delay:11.3s;
+}
+.down-fg:nth-child(13):after{
+    top:240px;
+    color: #00ffff;
+    -webkit-animation:invader-fg-sixth 11s;
+    animation:invader-fg-sixth 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.3s;
+    animation-delay:11.3s;
+}
+.down-fg:nth-child(14):after{
+    top:240px;
+    color: #00ffff;
+    -webkit-animation:invader-fg-seventh 11s;
+    animation:invader-fg-seventh 11s;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-delay:11.3s;
+    animation-delay:11.3s;
+}
+/*--------> ANIMATIONS OF GREEN AND FUCSIA <-----------*/
+@keyframes invader-fg{
+    0%  {left: 0px; content:"f";}
+    9%  {left: 25px; content:"g";}
+    18% {left: 50px; content:"f";}
+    27% {left: 75px; content:"g";}
+    36% {left: 100px; content:"f";}
+    45% {left: 125px; content:"g";}
+    54% {left: 150px; content:"f";}
+    63% {left: 175px; content:"g";}
+    72% {left: 200px; content:"f";}
+    81% {left: 225px; content:"g";}
+    90% {left: 250px; content:"f";}
+    99% {left: 275px; content:"g";}
+}
+
+@keyframes invader-fg-second{
+    0%  {left: 100px; content:"f";}
+    9%  {left: 125px; content:"g";}
+    18% {left: 150px; content:"f";}
+    27% {left: 175px; content:"g";}
+    36% {left: 200px; content:"f";}
+    45% {left: 225px; content:"z";}
+    54% {left: 250px; content:"f";}
+    63% {left: 275px; content:"g";}
+    72% {left: 300px; content:"f";}
+    81% {left: 325px; content:"g";}
+    90% {left: 350px; content:"f";}
+    99% {left: 375px; content:"g";}
+}
+
+@keyframes invader-fg-third{
+    0%  {left: 200px; content:"f";}
+    9%  {left: 225px; content:"g";}
+    18% {left: 250px; content:"f";}
+    27% {left: 275px; content:"g";}
+    36% {left: 300px; content:"f";}
+    45% {left: 325px; content:"g";}
+    54% {left: 350px; content:"f";}
+    63% {left: 375px; content:"g";}
+    72% {left: 400px; content:"f";}
+    81% {left: 425px; content:"g";}
+    90% {left: 450px; content:"f";}
+    99% {left: 475px; content:"g";}
+}
+
+@keyframes invader-fg-fourth{
+    0%  {left: 300px; content:"f";}
+    9%  {left: 325px; content:"g";}
+    18% {left: 350px; content:"f";}
+    27% {left: 375px; content:"g";}
+    36% {left: 400px; content:"f";}
+    45% {left: 425px; content:"g";}
+    54% {left: 450px; content:"f";}
+    63% {left: 475px; content:"g";}
+    72% {left: 500px; content:"f";}
+    81% {left: 525px; content:"g";}
+    90% {left: 550px; content:"f";}
+    99% {left: 575px; content:"g";}
+}   
+
+@keyframes invader-fg-fifth{
+    0%  {left: 400px; content:"f";}
+    9%  {left: 425px; content:"g";}
+    18% {left: 450px; content:"f";}
+    27% {left: 475px; content:"g";}
+    36% {left: 500px; content:"f";}
+    45% {left: 525px; content:"g";}
+    54% {left: 550px; content:"f";}
+    63% {left: 575px; content:"g";}
+    72% {left: 600px; content:"f";}
+    81% {left: 625px; content:"g";}
+    90% {left: 650px; content:"f";}
+    99% {left: 675px; content:"g";}
+}
+
+@keyframes invader-fg-sixth{
+
+    0%  {left: 500px; content:"f";}
+    9%  {left: 525px; content:"g";}
+    18% {left: 550px; content:"f";}
+    27% {left: 575px; content:"g";}
+    36% {left: 600px; content:"f";}
+    45% {left: 625px; content:"g";}
+    54% {left: 650px; content:"f";}
+    63% {left: 675px; content:"g";}
+    72% {left: 700px; content:"f";}   
+    81% {left: 725px; content:"g";}
+    90% {left: 750px; content:"f";}
+    99% {left: 775px; content:"g";}
+}
+
+@keyframes invader-fg-seventh{
+    0%  {left: 600px; content:"f";}
+    9%  {left: 625px; content:"g";}
+    18% {left: 650px; content:"f";}
+    27% {left: 675px; content:"g";}
+    36% {left: 700px; content:"f";} 
+    45% {left: 725px; content:"g";}
+    54% {left: 750px; content:"f";}
+    63% {left: 775px; content:"g";}
+    72% {left: 800px; content:"f";} 
+    81% {left: 825px; content:"g";}
+    90% {left: 850px; content:"f";}
+    99% {left: 875px; content:"g";}
+}
