@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form, lightbox wall, map and owl carousel</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="lightbox2-master/src/css/lightbox.css">
+	<link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
+</head>
+<body>
+	<section class="container">
+		<div class="row">
+			<article class="col-sm-4">
+				<h2 class="text center">Dessert Register</h2>
+				<hr>
+				<form action="">
+					<div class="form-group">
+						<label for="nombre">Your Name</label>
+						<input type="text" class="form-control" required> 
+					</div>
+					<div class="form-group form-inline">
+						<label for="tipo">Choose a dessert</label>
+						<select name="tipo" id="tipo" class="form-control">
+							<option value="">--</option>
+							<option value="Cupcake">Cupcake</option>
+							<option value="bon-bon">Bon-bon</option>
+							<option value="fruits">Fruits</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="">Flavor:</label>
+						<label>
+							<input type="checkbox"> Chocolate
+							<input type="checkbox"> Vanilla
+						</label>
+						
+					</div>
+					<div class="form-group">
+						<textarea name="" id="" rows="10" class="form-control" placeholder="Describe your favorite dessert"></textarea>
+					</div>
+					<p><button type="submit" class="btn btn-info">Send</button></p>
+				</form>
+			</article>
+			<article class="col-sm-8">
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="img/1cupcakes_chocolate.jpg" class="thumbnail" data-lightbox="gallery" data-title="Chocolate Cupcake">
+								<img src="img/1cupcakes_chocolate.jpg" alt="" class="img-responsive">
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a href="img/2mariposa_g.jpg" class="thumbnail" data-lightbox="gallery" data-title="Chocolate Butterfly">
+								<img src="img/2mariposa_g.jpg" alt="" class="img-responsive">
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="img/3milk_chocolate_heart_mold.jpg" class="thumbnail" data-lightbox="gallery" data-title="Milk Chocolate Heart Mold">
+								<img src="img/3milk_chocolate_heart_mold.jpg" alt="" class="img-responsive">
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a href="img/4cupcakes_de_red_velvet_y_chocolate_blanco.jpg" class="thumbnail" data-lightbox="gallery" data-title="Red Velvet And Chocolate">
+								<img src="img/4cupcakes_de_red_velvet_y_chocolate_blanco.jpg" alt="" class="img-responsive">
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<a href="img/5red-velvet-cupcakes-R112125-ss.jpg" class="thumbnail" data-lightbox="gallery" data-title="Chocolate 1">
+								<img src="img/5red-velvet-cupcakes-R112125-ss.jpg" alt="" class="img-responsive">
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a href="img/6trufas-de-chocolate-blanco.jpg" class="thumbnail" data-lightbox="gallery" data-title="Chocolate 1">
+								<img src="img/6trufas-de-chocolate-blanco.jpg" alt="" class="img-responsive">
+							</a>
+						</div>
+					</div>
+			</article>
+		</div>
+	</section>
+	<section class="container">
+		<div class="row">
+			<article class="col-sm-12">
+				<h2>Mapa</h2>
+				<hr>
+				<iframe class="center-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.94053147535!2d-66.91532508521378!3d10.505350267011307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5ed0f819a561%3A0xe38e1aceedd9801e!2sChocolates+con+Cari%C3%B1o!5e0!3m2!1ses-419!2sve!4v1444496932332" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</article> 
+		</div>
+		<br>
+	</section>	
+	<section class="container">
+		<div class="row">
+			<article class="col-sm-12">
+				<div id="carousel" class="owl-carousel owl-theme">
+					<div>
+						<img src="img/carousel/barbados-chocolate-festival.jpg" alt="" class="center-block">
+					</div>
+					<div>
+						<img src="img/carousel/Chocolate-Raspberry-Tart-Plated.jpg" alt="" class="center-block">
+					</div>
+					<div>
+						<img src="img/carousel/chocolateHeaven_960x350.jpg" alt="" class="center-block">
+					</div>
+					<div>
+						<img src="img/carousel/recipes-home.jpg" alt="" class="center-block">
+					</div>
+					<div>
+						<img src="img/carousel/slider10.jpg" alt="" class="center-block">
+					</div>
+				</div>
+			</article> 
+		</div>
+	</section>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="lightbox2-master/src/js/lightbox.js"></script>
+	<script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function() {
+	  		$("#carousel").owlCarousel({
+		      navigation : true, // Show next and prev buttons
+		      slideSpeed : 300,
+		      paginationSpeed : 400,
+		      singleItem:true
+	  		});
+		});
+	</script>
+</body>
+</html>

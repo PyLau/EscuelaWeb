@@ -80,7 +80,7 @@ nav{
 nav .right-menu li .submenu{
     width:100px;
     position: absolute;
-    left: 50px;
+    left: 18px;
     /*display: none;*/
     opacity: 0; /*para hacerlo transparente*/
     /*height: 0; no sirve para ocultarlo*/
@@ -137,7 +137,7 @@ nav .another-side{
     position: absolute;
     left: 125px;
     height: 309px;
-    width: 300px;
+    width: 239px;
     background-color: whitesmoke;
     z-index: -10;
     top: 0;
@@ -153,6 +153,6 @@ nav .another-side{
 
 .another-side header h1{
     line-height: 74px;
-    margin-left: 20px;
+    text-align: center;
     font-size: 25px;
 }

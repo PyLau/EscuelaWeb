@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+.container{
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	width: 300px;
+	margin: 0 auto;
+	top:100px;
+	background-color: #3498db;
+	text-align: center;
+	color: whitesmoke;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+.icon-star-two{
+	font-size: 100px;
+	color: #f1c40f;
+	text-shadow: 2px 2px #e67e22;
+}
+
+.icon-gamepad{
+	font-size: 100px;
+	color:#c0392b;
+	text-shadow: 2px 2px #2c3e50;
+}
+
+
+/*STAR ANIMATION*/
+
+@keyframes star{
+	from {
+		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+		-webkit-transform: rotateY(360deg);	
+	}
+}
+
+@-webkit-keyframes star{
+	from {
+		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
+	}
+
+	to{
+		transform: rotateY(360deg);
+		-webkit-transform: rotateY(360deg);	
+	}
+
+}
+
+.container .icon-star-two {
+	animation-name: star;
+	animation-duration:4s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+
+	-webkit-animation-name: star;
+	-webkit-animation-duration:4s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+}
+
+/*GAMEPAD ANIMATION*/
+
+@keyframes gamepad{
+	from {
+		transform: skewX(0deg);
+		-webkit-transform: skewX(0deg);
+	}
+	to{
+		transform: skewX(360deg);
+		-webkit-transform: skewX(360deg);	
+	}
+}
+
+@-webkit-keyframes gamepad{
+	from {
+		transform: skewX(0deg);
+		-webkit-transform: skewX(0deg);
+	}
+
+	to{
+		transform: skewX(360deg);
+		-webkit-transform: skewX(360deg);	
+	}
+
+}
+
+.container .icon-gamepad {
+	animation-name: gamepad;
+	animation-duration:4s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+
+	-webkit-animation-name: gamepad;
+	-webkit-animation-duration:4s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+}

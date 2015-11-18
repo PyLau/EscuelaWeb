@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+.container{
+	font-family: 'Roboto', sans-serif;
+}
+
+.old-button{
+	width: 200px;
+	background-color: #16a085;
+	border: 5px solid #f1c40f;
+	padding: 20px;
+	text-align: center;
+	font-size: 1.2em;
+	color:whitesmoke;
+	font-weight: bold;
+	
+	/*a Style*/
+	text-decoration: none;
+	display: block;
+
+	/*Nothing to do with buttons*/
+	margin-top: 5px;
+}
+
+.new-button{
+	width: 100%;
+	background-color: #bdc3c7;
+	text-align: center;
+	font-size: 1.2em;
+	color: #2c3e50;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	height: 30px;
+	padding: 20px;
+	border: 4px solid #bdc3c7;
+	margin-top: 5px;
+	transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-webkit-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+}
+
+/*Here goes the magic*/
+
+.new-button:hover{
+	background-color: transparent;
+	color: #7f8c8d;
+}
+
+.orange{
+	background-color: transparent;
+	border: 4px solid #d35400; /*My Pumpkin Color <3*/
+	color:#d35400;
+}
+
+.orange:hover{
+	background-color: #d35400;
+	color: whitesmoke;
+}
+
+.purple{
+	background-color: #8e44ad;
+	color: whitesmoke;
+	border: 4px solid #9b59b6;
+}
+
+.purple:hover{
+	background-color: transparent;
+	color: #9b59b6;
+}
+
+/*SPRITE BUTTONS*/
+
+.sprite{
+	width: 84px;
+	height: 84px;
+	display: block;
+	text-decoration: none;
+	color: transparent;
+	background-image: url(../img/mini-social-icons.png);
+	transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-webkit-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+}
+
+.sprite.flickr{background-position: -84px -84px;}
+.sprite.flickr:hover{background-position: -84px -168px;}
+.sprite.flickr:active{background-position: -84px -252px;}
+
+.sprite.pinterest{background-position: -420px -84px;}
+.sprite.pinterest:hover{background-position: -420px -168px;}
+.sprite.pinterest:active{background-position: -420px -252px;}
+
+.sprite.google-plus{background-position: -252px -84px;}
+.sprite.google-plus:hover{background-position: -252px -168px;}
+.sprite.google-plus:active{background-position: -252px -252px;}
+
+.sprite.youtube{background-position: -840px -84px;}
+.sprite.youtube:hover{background-position: -840px -168px;}
+.sprite.youtube:active{background-position: -840px -252px;}
+

@@ -1,0 +1,32 @@
+.logo{
+	height:60px;
+	position: relative;
+	top: -20px;
+	width: 60px;
+}
+
+.intro-header{
+	background-attachment: fixed;
+}
+
+.banner{
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.scrollup{
+	height: 40px;
+	width: 40px;
+	background-image: url(../img/icon_top.png);
+	color: transparent;
+	position: fixed;
+	right:5px;
+	bottom: 15px;
+	opacity: .4;
+	transition: all 400ms ease;
+}
+
+.scrollup:hover{
+	color: transparent;
+	opacity: 1;
+}

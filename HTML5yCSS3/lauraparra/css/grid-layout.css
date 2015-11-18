@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+.container{
+	font-family: 'Roboto', sans-serif;
+}
+
+.responsive-img{
+	max-width: 100%;
+}
+
+h1, h2, h4{
+	color:#e74c3c;
+}
+
+h1{
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+}
+
+.center{
+	text-align: center;
+}
+
+.round-img{
+	border-radius: 50%;
+}
