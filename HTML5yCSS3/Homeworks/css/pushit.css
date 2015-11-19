@@ -1,0 +1,105 @@
+.panel{
+	position: relative;
+}
+
+.panel:active{
+  outline: none;
+}
+.panel:focus{
+  outline: none;
+}
+
+#active{
+    z-index:1;
+}
+
+.button{
+    display: block;
+	position: absolute;
+    z-index:2;
+    height: 100px;
+    width: 100px;
+}
+.button:active.button{
+	display: none;
+    outline: none;
+}
+.button:focus{
+    outline: none;
+}
+.button:active{
+    outline: none;
+}
+
+
+.blue{
+	left: 477px;
+    top: 200px;
+    height: 113px;
+    width: 113px;
+}
+
+.yellow{
+    left: 583px;
+    top: 167px;
+}
+
+.red{
+    left: 561px;
+    top: 284px;
+}
+.green{
+    left: 457px;
+    top: 322px;
+}
+
+.white{
+    left: 669px;
+    top: 286px;
+}
+
+.white2{
+    left: 695px;
+    top: 169px;
+}
+
+.white3{
+    left: 805px;
+    top: 174px;
+}
+
+.white4{
+    left: 780px;
+    top: 289px;
+}
+
+.base{
+    position: absolute;
+    z-index: 2;
+    height: 200px;
+    width: 200px;
+    left: 206px;
+    top: 206px;
+    background-image: url(../img/base_resize.png);
+}
+
+.poppet{
+  width: 145px;
+  height: 145px;
+  position: absolute;
+  top: 27px;
+  left: 28px;
+  z-index: 3;
+  background: url(../img/poppet_resize.png); 
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition:background-position .1s ease-in;  
+  -moz-transition:background-position .1s ease-in;  
+  -o-transition:background-position .1s ease-in;  
+  transition:background-position .1s ease-in;
+}
+
+.poppet:active { 
+    background-position: top;
+}
+
