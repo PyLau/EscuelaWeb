@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mashape Example</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/class08.css">
+</head>
+<body>
+  
+<!--  div.container>div.row*2>div.col-md-12-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+<!--        form#form-ign>div.form-group*3-->
+        <form action="" id="form-ign">
+          <div class="form-group">
+            <label for="form-ign-count">Number of results (1-20)</label>
+            <input id="form-ign-count" type="number" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="form-ign-game">Game title</label>
+            <input id="form-ign-game" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+<!--            button.btn.btn-primary>{Search}-->
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div id="form-result" class="col-md-12">
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="spiffy">
+    <img src="img/spinner.gif" alt="">
+  </div>
+  
+  
+  
+  <script src="js/class06.js"></script>
+</body>
+</html>
