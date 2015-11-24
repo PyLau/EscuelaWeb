@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+  $('#board-text').editable();
   $('#board-new').focus();
   
   $('#board-form').submit(function(evt){
@@ -8,17 +8,19 @@ $(document).ready(function(){
     if(boardText === '')
       return;
     $('#board-new').val('');
-    $('#board-text').text(boardText);
+    $('#hidden-board .board-text').text(boardText);
     var boardElement = $('#hidden-board').children();
     $('#board-list').append(boardElement.clone());
-    $('#board-list #board-text').prop('id','');
+    $('.board-text').editable({type: 'text', title: 'Enter title'});
+    // $('#board-list #board-text').prop('id','');
   });
 
   // $(this).parent().remove(); this is for delete
     
   $('#board-list').on('click','.board-plus-btn', function (evt){
     var taskElement = $('#hidden-item').children();
-    $('#task-list').append(taskElement.clone());
+    // $('#task-list').append(taskElement.clone());
+    $(this).parent().parent().find('#task-list').append(taskElement.clone());
     $('#task-list #task-text').prop('id','');
   }); 
 

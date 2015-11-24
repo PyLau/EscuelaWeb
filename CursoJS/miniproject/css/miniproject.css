@@ -50,3 +50,17 @@ body{
 	padding-right: 60%;
     line-height: 3;
 }
+
+.main-board header{
+	padding: 0px 30px 0px 0px;
+}
+
+.main-board .board-plus-btn{
+	position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.editable-click, a.editable-click{
+	line-height: 3;
+    word-wrap: break-word;
+}
