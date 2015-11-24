@@ -1,0 +1,126 @@
+
+/*QUESTION BOX???????????????*/
+.question-box{
+	position: absolute;
+	background-color: #ffa13f;
+	width: 80px;
+	height: 80px;
+	bottom: 500px;
+	left: 500px;
+	border-bottom: 4px solid #000;
+	border-right: 4px solid #000;
+	border-left:4px solid #f25707;
+	border-top: 4px solid #f25707;
+	box-sizing: border-box;
+}
+
+.question-mark{
+	background-color: #f45907;
+
+}
+
+.box{
+	height: 14px;
+	width: 9px;
+	left: 19px;
+	position: absolute;
+	top: 18px;	
+}
+
+.b1{
+	border-right: 5px solid #000;
+	z-index: 4;
+	border-bottom: 5px solid #000;
+}
+
+.b2{
+    height: 5px;
+    width: 24px;
+    left: 23px;
+    position: absolute;
+    top: 13px;
+    border-bottom: 5px solid #000;
+    z-index: 3;
+}
+
+.b3{
+	left: 42px;
+    z-index: 5;
+    height: 19px;
+    border-right: 4px solid #000;
+}
+
+.b4{
+    height: 23px;
+    width: 9px;
+    top: 37px;
+    left: 33px;
+    border-bottom: 5px solid #000;
+	border-right: 5px solid #000;
+}
+
+.little-box{
+	position: absolute;
+	height: 5px;
+	width: 5px;
+}
+
+.lb1{
+	background-color: #000;
+	top: 10px;
+	left: 9px;
+}
+
+.righty{
+	left:61px;
+}
+
+.lb2{
+	top: 61px;
+}
+
+.back{
+	background-color: #ffa13f;
+	z-index: 6;
+}
+
+.k1{
+	top:18px;
+	left:51px;
+	height: 5px;
+	width: 4px;
+}
+
+.k2{
+	top:32px;
+	left:19px;
+	height: 5px;
+	width: 4px;
+}
+
+.k3{
+	top: 47px;
+    left: 33px;
+}
+
+.k4{
+	left: 42px;
+	top: 52px;
+	width: 5px;
+}
+
+.orange{
+	background-color: #f45907;
+	top: 32px;
+	left: 38px;
+	height: 5px;
+	width: 4px;
+}
+
+.black-box{
+    background-color: #000;
+    top: 47px;
+    left: 37px;
+    height: 5px;
+    width: 5px;
+}

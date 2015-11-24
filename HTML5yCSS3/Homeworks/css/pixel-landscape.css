@@ -1,0 +1,609 @@
+.container-box{
+	position: relative;
+	background-color: #6c87ff; /*Sky color*/
+	width: 531px;
+	height: 800px;
+}
+
+.mario{
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0);
+	width:241px;
+	height: 140px;
+	bottom: 253px;
+    left: 120px;
+}
+
+.mario-cap{
+	position: absolute;
+	background-color: #d1231a;
+}
+#mc1{
+	width: 50px;
+	height: 10px;
+	left:75px;
+}
+
+#mc2{
+	width: 103px;
+	height: 10px;
+	left:60px;
+	top:10px;
+	z-index: 3;
+}
+.mario-head{
+	position: absolute;
+	background-color: #eebf8b;
+	width: 110px;
+	height: 50px;
+	top: 20px;
+	left:60px;
+}
+
+.hair{
+	background-color: #824226;
+	z-index: 2;
+	position: absolute;/*No entiendo porque tengo que poner este position absolute aqui si la clase padre (mario-head) ya lo tiene*/
+}
+
+#h1{
+	width: 30px;
+	height: 10px;
+}
+
+#h2{
+	width: 10px;
+	height: 20px;
+	left:10px;
+	top: 10px;
+}
+
+#h3{
+	width: 10px;
+	height: 10px;
+	left:20px;
+	top: 20px;
+}
+#h4{
+	width: 10px;
+	height: 30px;
+	left: -10px;
+	top: 10px;
+}
+#h5{
+    top: 30px;
+    width: 10px;
+    height: 10px;
+}
+#white-spot{
+	top: 40px;
+    width: 10px;
+    height: 10px;
+    background-color: #6c87ff;
+}
+.face{
+	background-color: #000;
+	z-index: 2;
+	position: absolute;/*No entiendo porque tengo que poner este position absolute aqui si la clase padre (mario-head) ya lo tiene*/
+}
+
+#f1{
+	left:60px;
+	width: 10px;
+	height: 20px;
+}
+
+#f2{
+	left:70px;
+	width: 10px;
+	height: 10px;
+	top:20px;
+}
+
+#f3{
+	left:60px;
+	width: 40px;
+	height:10px;
+	top: 30px;
+	z-index: 3;
+}
+
+#f4{
+	background-color: #6c87ff;
+	left:80px;
+	width: 10px;
+	height: 10px;
+}
+#f5{
+	background-color: #d1231a;
+	left:90px;
+	width: 30px;
+	height: 10px;
+}
+#f6{
+	background-color: #d1231a;
+	left:100px;
+	width: 20px;
+	height: 10px;
+	top: 10px;
+}
+#f7{
+	background-color: #d1231a;
+	left:110px;
+	width: 10px;
+	height: 10px;
+	top: 20px;
+}
+
+#arm{
+	background-color: #d1231a;
+	left:90px;
+	width: 20px;
+	height: 20px;
+	top: 30px;
+}
+
+.mario-chest{
+	background-color: #d1231a;
+	position: absolute;
+	height: 30px;
+	width: 130px;
+	top: 70px;
+	left: 30px;
+}
+
+.vest{
+	background-color: #474ed0;
+	position: absolute;
+}
+
+#v1{
+	height: 10px;
+	width: 10px;
+	left: 40px;
+}
+#v2{
+	height: 10px;
+	width: 10px;
+	left: 90px;
+}
+
+#v3{
+	height: 10px;
+	width: 10px;
+	left: 50px;
+	top: 10px;
+}
+
+#v4{
+	height: 10px;
+	width: 10px;
+	left: 100px;
+	top: 10px;
+}
+
+#v5{
+	height: 10px;
+	width: 90px;
+	left: 50px;
+	top: 20px;
+}
+/*yellow dot*/
+#v6{
+	background-color: #fdf11f;
+	height: 10px;
+	width: 10px;
+	left: 100px;
+	top: 20px;
+}
+.mario-body{
+	background-color: #474ED0;
+	position: absolute;
+	height: 30px;
+	width: 120px;
+	top: 100px;
+	left: 50px;
+}
+.yellow-dot{
+	position: absolute;/*No entiendo porque tengo que poner este position absolute aqui si la clase padre (mario-head) ya lo tiene*/
+	background-color: #fdf11f;
+	height: 10px;
+	width: 10px;
+	left: 40px;
+}
+.right-hand{
+	position: absolute;/*No entiendo*/
+	background-color: #EEBF8B;
+
+}
+
+#fist{
+	height: 20px;
+	width: 20px;
+	left: -20px;
+	top: 10px;
+}
+
+#skin-dot{
+	height: 10px;
+	width: 10px;
+	bottom: 0;
+}
+
+.finger{
+	position: absolute;/*No entiendo*/
+	height: 10px;
+	width: 10px;
+	background-color: #EEBF8B;
+	left: -30px;
+}
+
+.red-dot{
+	position: absolute;/*No entiendo*/
+	background-color: #d1231a;
+	left: 10px;
+	height: 10px;
+	width: 10px;
+}
+.skin-dot{
+	position: absolute;/*No entiendo*/
+	height: 10px;
+	width: 10px;
+}
+.shoes{
+	background-color: #824226;
+	position: absolute;/*No entiendo*/
+}
+
+#s1{
+	height: 20px;
+	width: 20px;
+	top: 10px;
+	left: -20px;
+}
+
+#s2{
+	height: 20px;
+	width: 20px;
+	top: 20px;
+	left: -30px;
+
+}
+#s3{
+	height: 10px;
+	width: 10px;
+	top: 10px;
+}
+#s4{
+	height: 50px;
+	width: 20px;
+	left: 120px;
+	top: -30px;
+}
+
+.blank-bar{
+	position: absolute;
+	background-color: #6c87ff;
+	height: 10px;
+	width: 50px;
+	bottom: 0;
+	left: 70px;
+}
+.blank{
+	position: absolute;
+	background-color: #6c87ff;
+	height: 10px;
+	width: 10px;
+}
+.white-dot{
+	position: absolute;
+	background-color: #6c87ff;
+	height: 10px;
+	width: 10px;
+	top: 10px;
+	right: 0;
+}
+#left-hand{
+	background-color: #EEBF8B;
+	width: 30px;
+	height: 20px;
+	left: 90px;
+	top: -20px;
+}
+
+.groundfloor{
+	position: absolute;
+	background-color: #e55e0d;
+	width: 76px;
+	height: 113px;
+	bottom: 0px;
+	left: 0px;
+	box-sizing: border-box;
+}
+
+.groundfloor-1more{   /*??????????Mas o menos*/
+	position: absolute;
+	background-color: #e55e0d;
+	width: 76px;
+	height: 113px;
+	bottom: 0px;
+	left: 76px;
+	box-sizing: border-box;
+}
+
+.groundfloor-2more{   /*??????????Mas o menos*/
+	position: absolute;
+	background-color: #e55e0d;
+	width: 76px;
+	height: 113px;
+	bottom: 0px;
+	left: 152px;
+	box-sizing: border-box;
+}
+.groundfloor-3more{   /*??????????Mas o menos*/
+	position: absolute;
+	background-color: #e55e0d;
+	width: 76px;
+	height: 113px;
+	bottom: 0px;
+	left: 309px;
+	box-sizing: border-box;
+}
+.groundfloor-4more{   /*??????????Mas o menos*/
+	position: absolute;
+	background-color: #e55e0d;
+	width: 76px;
+	height: 113px;
+	bottom: 0px;
+	left: 303px;
+	box-sizing: border-box;
+}
+.groundfloor-5more{   /*??????????Mas o menos*/
+	position: absolute;
+	background-color: #e55e0d;
+	width: 76px;
+	height: 113px;
+	bottom: 0px;
+	left: 379px;
+	box-sizing: border-box;
+}
+.groundfloor-6more{   /*??????????Mas o menos*/
+	position: absolute;
+	background-color: #e55e0d;
+	width: 76px;
+	height: 113px;
+	bottom: 0px;
+	left: 455px;
+	box-sizing: border-box;
+}
+.groundfloor-3more{   /*??????????Mas o menos*/
+	position: absolute;
+	background-color: #e55e0d;
+	width: 76px;
+	height: 113px;
+	bottom: 0px;
+	left: 227px;
+	box-sizing: border-box;
+}
+
+.beige-border{
+border-left: 5px solid #f3cda9;
+border-top: 5px solid #f3cda9;
+border-right: 4px solid #000;
+}
+/*color beige f3cda9*/
+.orange-spots{
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    background-color: #e55e0d;
+}
+
+.os1{
+	left: 0px;
+    top: 0px;
+}
+
+.os2{
+    left: 24px;
+    top: 23px;
+    z-index: 7;
+}
+
+.os3{
+	left: 0px;
+    top: 23px;
+}
+
+.os4{
+	left: 24px;
+	width: 10px;
+}
+.os5{
+	right: 0px;
+	top: 0px;
+}
+.os6{
+	left: 0px;
+	top: 75px;
+}
+.os7{
+	left: 0px;
+	top: 99px;
+	height: 4px
+}
+.os8{
+	left: 24px;
+	top: 99px;
+	height: 4px;
+	z-index: 7;
+}
+.os9{
+	right: 0px;
+	z-index: 7;
+	top: 57px;
+    width: 4px;
+    height: 14px;
+}
+.os10{
+	top: 47px;
+    height: 23px;
+}
+.square{
+	width: 10px;
+	height: 10px;
+	top:70px;
+	left:24px;
+	z-index: 7;
+}
+.black-line{
+    width: 5px;
+    position: absolute;
+    background-color: #000;
+}
+
+.bl1{
+	top: 5px;
+    height: 108px;
+    left: 24px;
+}
+.bl2{
+	top: 5px;
+    height: 108px;
+    left: 24px;
+}
+.bl3{
+	top: 23px;
+    height: 5px;
+    width: 19px;
+    left: 5px;
+}
+
+.bl4{
+	top: 70px;
+	left: 0px;
+	width: 24px;
+}
+
+.bl5{
+	top: 99px;
+	left: 5px;
+	width: 19px;
+	height: 4px;
+}
+.bl6{
+	top: 70px;
+	left: 33px;
+	width: 28px;
+	height: 5px;
+}
+.bl7{
+    top: 62px;
+    left: 61px;
+    width: 6px;
+    height: 8px;
+}
+.double-black{
+	width: 10px;
+	height: 5px;
+	left: 28px;
+	top: 47px;
+	z-index: 7;
+}
+
+.d1{
+	top: 52px;
+	left: 38px;
+}
+.d2{
+    top: 57px;
+    left: 48px;
+    width: 19px;
+}
+
+.big-one{
+    left: 67px;
+    top: 48px;
+    height: 9px;
+    width: 5px;
+}
+
+.beige-line{
+    width: 5px;
+    position: absolute;
+    background-color: #f3cda9;
+}
+
+.be1{
+	top: 5px;
+	height: 108px;
+	left: 29px;
+}
+.be2{
+	right: 0px;
+    top: 48px;
+    height: 9px;
+    width: 4px;
+}
+.be3{
+    left: 67px;
+    top: 57px;
+    width: 5px;
+    height: 23px;
+}
+.be4{
+    left: 34px;
+    top: 75px;
+    width: 33px;
+    height: 5px;
+}
+.be5{
+    left: 5px;
+    top: 28px;
+    width: 19px;
+    height: 5px;
+}
+
+.be6{
+	top: 75px;
+}
+
+.be7{
+    top: 62px;
+    left: 48px;
+    width: 13px;
+}
+.be8{
+	left: 38px;
+    top: 57px;
+    height: 5px;
+    width: 10px;
+}
+.be9{top: 103px;}
+
+.beige-spot{
+    height: 5px;
+    width: 5px;
+    left: 34px;
+    top: 52px;
+}
+
+.black-spot{
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: #000;
+}
+
+.bs1{
+	top: 19px;
+	left: 5px;
+}
+.bs2{
+	top: 94px;
+}
+.bs3{
+    top: 65px;
+    left: 19px;
+}
+

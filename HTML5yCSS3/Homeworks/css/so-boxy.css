@@ -1,0 +1,47 @@
+body{
+	font-size: 18px;
+}
+
+.navbar{
+	border:0;
+}
+
+.navbar-collapse {
+   padding: 0;
+}
+.nav-pills>li>a {
+    border-radius: 0px;
+    color: #fff;
+    background-color: #008CBA;
+}
+.nav-pills > li + li {
+  margin-left: 1px;
+}
+
+.nav>li>a {
+    padding: 15px 36px;
+}
+
+.btn-primary{
+	transition: background-color 300ms ease-out;
+	border:none;
+}
+
+.btn{
+	border-radius: 0px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: #007095;
+}
+h5 {
+    margin-top: 0px;
+}
+
+.well{border-radius: 0px;}
+
+.col-sm-2 > p {font-size: 17px;}
+
+.col-sm-2 > .btn{padding: 12px 20px;}
+
+.search{padding: 7px 55px;}

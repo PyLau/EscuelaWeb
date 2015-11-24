@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+body{
+	background-color: #2c3e50;
+}
+
+nav{
+	background-color: #2980b9;
+	margin-top: 20px;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	text-align: center;
+	width: 1000px;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav > ul > li{float: left;}
+
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	color: #000;
+	padding: 10px 20px;
+	transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-webkit-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+}
+
+nav ul li a:hover{
+	background-color:#f1c40f;
+}
+
+/*SUBMENU*/
+nav ul li div{
+	width:1000px;
+	position: absolute;
+	left: 0;
+	background-color: #ecf0f1;
+	/*display: none;*/
+	opacity: 0; /*para hacerlo transparente*/
+	/*height: 0; no sirve para ocultarlo*/
+	top: -900px;
+	transition: all 900ms ease;
+	-moz-transition: all 900ms ease;
+	-webkit-transition: all 900ms ease;
+	-o-transition: all 900ms ease;
+	-ms-transition: all 900ms ease;
+	z-index: -1;
+	transform: rotateY(0deg);
+}
+
+nav>ul>li:hover div{
+	display:table;
+	opacity: 1;
+	/*height: auto;  no sirve para ocultarlo*/
+	top: 39px;
+	transform: rotateY(360deg);
+}
+
+nav ul li div ul{
+	box-sizing: border-box;
+	width: 1%;
+	display: table-cell;
+	border-right: 2px solid #e74c3c;
+}
+
+nav ul li div ul:first-child{
+	border-right: 2px solid #8e44ad;
+}
+
+nav ul li div ul:nth-child(2){
+	border-right: 2px solid #16a085;
+}
+
+nav ul li div ul:nth-child(3){
+	border-right: 2px solid #2ecc71;
+}
+
+nav ul li div ul:last-child{
+	border: none;
+}
+
+nav ul li div ul .title{
+	background-color: #f1c40f;
+	font-size:20px;
+	font-weight: bold;
+}
+
+nav ul li div ul .title a{
+	color: #000;
+	padding: 10px 20px; 
+}
+
+nav ul li div ul .title a:hover{
+	background: none;
+	cursor: default;
+}
+
+.icon{
+	font-size: 20px;
+	color: #34495e; /*revisar*/
+	text-shadow: 1px 1px 2px #8e44ad;/*revisar*/
+	vertical-align: middle;
+}
+
+/*tarea: menu vertical con submenu*/

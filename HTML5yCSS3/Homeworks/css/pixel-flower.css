@@ -1,0 +1,194 @@
+/* BEAUTIFUL FIRE FLOWER*/
+.fire-flower{
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0);
+	width: 256px;
+	height: 256px;
+	bottom: 0px;
+	left: 500px;
+}
+.filling{
+	width:160px;
+	height: 144px;
+	border-top: 16px solid black;
+	border-bottom: 16px solid black;
+	background-color: #ff0000;
+	box-sizing:border-box;
+	margin: 0 auto;
+	position: relative;
+}
+
+.center{
+	background-color: #ffff00;
+	width: 95px;
+	height: 64px;
+	top: 16px;
+	left: 32px;
+	position: absolute;
+}
+
+.eyes{
+	background-color: #000;
+	height: 32px;
+	width: 16px;
+	top: 16px;
+	position: absolute;
+}
+
+#left-eye{left: 16px;}
+#right-eye{right: 16px;}
+
+.blank-space{
+	width: 31px;
+	height: 16px;
+	background-color: #FFF;
+	top: 16px;
+	position: absolute;
+	left: 32px;
+}
+
+.side{
+	height: 112px;
+	width: 48px;
+	border-top: 16px solid black;
+	border-bottom: 16px solid black;
+	background-color: #ff0000;
+	position: absolute;
+	top: 16px;
+	box-sizing:border-box;
+}
+
+#left-side{
+	left: 16px;
+}
+#right-side{
+	right: 16px;
+}
+
+.yellow-box{
+	width: 32px;
+	height: 32px;
+	background-color: #ffff00;
+    top: 16px;
+    position: absolute;
+}
+
+#left-box{
+	left: 32px;
+}
+
+#right-box{
+	right: 33px;
+}
+
+.aside{
+	height: 80px;
+	width: 32px;
+	border-top: 16px solid #000;
+	border-bottom: 16px solid #000;
+	background-color: #F00;
+	position: absolute;
+	top: 32px;
+	box-sizing: border-box;
+	
+}
+
+#left-aside{border-left: 16px solid #000;}
+#right-aside{
+	border-right: 16px solid #000;
+	right: 0;
+}
+
+.root{
+	width: 32px;
+	height: 112px;
+	position: absolute;
+	box-sizing: border-box;
+	background-color: #00aa55;
+	border-bottom: 16px solid #000;
+}
+
+.r1{
+	border-left: 16px solid #000;
+	left: 96px;
+}
+
+.r1-right{
+	border-right: 16px solid #000;
+	right: 96px;
+}
+
+.r2{
+	height: 80px;
+    bottom: 0;
+    left: 80px;
+    width: 16px;
+	border-top: 16px solid #000;
+}
+
+.r2-right{
+	height: 80px;
+    bottom: 0;
+    width: 16px;
+	border-top: 16px solid #000;
+	right: 80px;
+}
+
+.r3{
+	height: 96px;
+    bottom: 0;
+    left: 64px;
+    width: 16px;
+	border-top: 16px solid #000;
+}
+.r3-right{
+	right: 64px;
+	height: 96px;
+    bottom: 0;
+    width: 16px;
+	border-top: 16px solid #000;
+}
+.double{
+	left: 48px;
+    bottom: 16px;
+    height: 80px;
+}
+.double-right{
+	right: 48px;
+    bottom: 16px;
+    height: 80px;
+}
+
+.pos{
+	left: 32px;
+    bottom: 16px;
+    height: 96px;
+}
+
+.pos-right{
+	right: 32px;
+    bottom: 16px;
+    height: 96px;
+}
+
+.pos2{
+	left: 16px;
+	bottom: 32px;
+	height: 80px;
+}
+.pos2-right{
+	right: 16px;
+	bottom: 32px;
+	height: 80px;
+}
+.black{
+	background-color: #000;
+	height: 48px;
+	width: 16px;
+	bottom: 48px;	
+}
+
+
+.right{
+	right: 0;
+}

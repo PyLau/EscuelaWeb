@@ -1,0 +1,16 @@
+@media(max-width:768px){
+	h1{
+		color:#d35400;
+		font-size:12px;
+	}
+	h2{
+		color: #7f8c8d;
+		font-size: 18px;
+	}
+	p{
+		font-size: 12px;
+	}
+	.navbar-inverse{
+		background: #bdc3c7;
+	}
+}

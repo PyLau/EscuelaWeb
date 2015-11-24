@@ -1,0 +1,8 @@
+.parallax-car{
+	background-image: url(../img/background.png);
+	height:400px;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-bottom: 10px;
+}

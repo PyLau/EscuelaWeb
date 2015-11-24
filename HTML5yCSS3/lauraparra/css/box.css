@@ -1,0 +1,123 @@
+.contenedor{
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* Prodpiedades de .caja */
+.caja{
+	width: 230px;
+	height: 230px;
+	background-color: #8e44ad;
+	display: inline-block;
+	padding: 20px;
+	border: 10px solid #9b59b6;
+	
+	/*Propiedades de texto*/
+	color: whitesmoke;
+	margin-top: 20px;
+	font-size: 80px;
+	text-align: center;
+	font-family: Arial;
+	line-height: 170px;
+	
+	/*Propiedades de CSS3*/
+	box-sizing:border-box;
+	border-radius: 115px;
+}
+
+/*Caja con doble div*/
+
+.borde{
+	width: 230px;
+	height: 230px;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.box{
+	color: whitesmoke;
+	font-size: 80px;
+	text-align: center;
+	background-color: #3F51B5;
+	line-height: 170px;
+	padding: 20px;
+	border: 10px dotted #2196F3;
+	border-radius: 50%;
+}
+
+.cajita{
+	width: 240px;
+	height: 240px;
+	display: inline-block;
+	background-color: #F57F17;
+	margin-top: 20px;
+	color: whitesmoke;
+	font-size: 80px;
+	text-align: center;
+	line-height: 180px;
+	border: 10px solid #E65100;
+	padding: 20px;
+	box-sizing:border-box;
+	float: left;
+}
+
+#c5{
+	background-color: #FFD600;
+}
+
+.contenedor-triangulos{
+	clear: both;
+}
+
+.triangulo{
+	width: 0;
+	height: 0;
+	border-left: 160px solid transparent;
+	border-right: 160px solid transparent;
+	border-bottom: 250px solid green;
+	float: left;
+}
+
+#t1{
+	border-bottom: 250px solid black;
+}
+
+#t2{
+	border-bottom: 250px solid yellow;
+}
+
+#t3{
+	border-bottom: 250px solid blue;
+}
+
+#t1, #t2, #t3{
+	color: transparent;
+}
+
+.contenedor-shapes{
+	clear: both;
+}
+
+.caret{
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid red;
+	border-bottom: 50px solid transparent;
+	float: left;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+#l1{
+	border-right:none;
+	border-left: 100px solid red;
+}
+#l2{
+	border-right: 100px solid blue;
+}
+
+#l3{
+	
+	border-right: 100px solid yellow;
+}

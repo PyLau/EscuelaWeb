@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+body{
+	background-color: #078E04;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+	width: 960px;
+	margin: 0 auto;
+	margin-top: -20px;
+}
+
+.header-top{
+	text-align: center;
+	background-color: black;
+	color: #fff;
+	padding: 20px 15px;
+}
+
+.header-top h1{
+	font-size: 50px;
+}
+
+.header-top img{
+	width: 300px;
+}
+
+.header-top p{
+	text-align: justify;
+	font-style: italic;
+}
+
+#textos{
+	background-color: #0DF208;
+}
+
+.texto{
+	width: 280px;
+	text-align: justify;
+	font-size: 12px;
+	padding: 0px 18px;
+	display: inline-block;
+	color: whitesmoke;
+}
+
+#pie{
+	background-image: url(../img/Bayer_pattern.png);
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 40px;
+	height: 100px;
+	text-align: center;
+}

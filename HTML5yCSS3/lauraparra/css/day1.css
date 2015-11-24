@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+body{
+	
+	font-family: 'Roboto', sans-serif;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.myclass{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #8e44ad;
+	text-align: justify;
+	border: 5px solid #7f8c8d;
+	border-bottom: 2px dotted #bdc3c7;
+}
+
+#myid{
+	background-color: #1abc9c;
+}
+
+.box-container{
+	text-align: center;
+}
+
+.box{
+	width: 300px;
+	height: 200px;
+	background-color: #2980b9;
+	color: whitesmoke;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 20px;
+
+}
+
+.blue{
+	background-color: #3498db;
+}

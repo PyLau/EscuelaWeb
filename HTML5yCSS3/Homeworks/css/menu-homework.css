@@ -1,0 +1,158 @@
+@import url(data:application/octet-stream;base64,QGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNDAwOwogIHNyYzogbG9jYWwoJ09wZW4gU2FucycpLCBsb2NhbCgnT3BlblNhbnMnKSwgdXJsKGh0dHA6Ly9mb250cy5nc3RhdGljLmNvbS9zL29wZW5zYW5zL3YxMy9jSlpLZU91QnJuNGtFUnhxdGFVSDNhQ1djeW5mX2NEeFh3Q0x4aWl4RzFjLnR0ZikgZm9ybWF0KCd0cnVldHlwZScpOwp9CkBmb250LWZhY2UgewogIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJzsKICBmb250LXN0eWxlOiBub3JtYWw7CiAgZm9udC13ZWlnaHQ6IDcwMDsKICBzcmM6IGxvY2FsKCdPcGVuIFNhbnMgQm9sZCcpLCBsb2NhbCgnT3BlblNhbnMtQm9sZCcpLCB1cmwoaHR0cDovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvb3BlbnNhbnMvdjEzL2szazcwMlpPS2lMSmMzV1ZqdXBsekluRjV1RmREdHRNTHZtV3VKZGhoZ3MudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7Cn0KQGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdSb2JvdG8nOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNDAwOwogIHNyYzogbG9jYWwoJ1JvYm90bycpLCBsb2NhbCgnUm9ib3RvLVJlZ3VsYXInKSwgdXJsKGh0dHA6Ly9mb250cy5nc3RhdGljLmNvbS9zL3JvYm90by92MTUvek43R0JGd2ZNUDR1QTZBUjBIQ29MUS50dGYpIGZvcm1hdCgndHJ1ZXR5cGUnKTsKfQpAZm9udC1mYWNlIHsKICBmb250LWZhbWlseTogJ1JvYm90byc7CiAgZm9udC1zdHlsZTogbm9ybWFsOwogIGZvbnQtd2VpZ2h0OiA3MDA7CiAgc3JjOiBsb2NhbCgnUm9ib3RvIEJvbGQnKSwgbG9jYWwoJ1JvYm90by1Cb2xkJyksIHVybChodHRwOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9yb2JvdG8vdjE1L2QtNklZcGxPRm9jQ2FjS3p4d1hTT0tDV2N5bmZfY0R4WHdDTHhpaXhHMWMudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7Cn0K);
+
+nav .right-menu {
+    padding: 15px 10px;
+    list-style: none;
+    width: 103px;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 0px 4px 0px rgba(66,43,66,0.45);
+    -moz-box-shadow: 2px 0px 4px 0px rgba(66,43,66,0.45);
+    box-shadow: 2px 0px 4px 0px rgba(66,43,66,0.45);
+    background-color: #123459;
+}
+
+nav .right-menu li{
+   width:133px;
+   -webkit-transition: right 0.3s ease-out;
+   transition: margin-left 0.3s ease-out;
+   -webkit-border-bottom-left-radius: 10px;
+   -webkit-border-top-left-radius: 10px;
+   padding: 19px 0;
+   box-shadow: -1px -1px 14px -1px rgba(0,0,0,0.75);
+   margin-bottom: 1px;
+   margin-left: 65px;
+}
+
+nav .right-menu li a {
+    width: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav .right-menu li:hover{
+    margin-left: 0px;
+}
+nav .right-menu .home{
+    background: -moz-linear-gradient(45deg, #ffa33d 8%, #e77e2d 76%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(8%,#ffa33d), color-stop(76%,#e77e2d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #ffa33d 8%,#e77e2d 76%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #ffa33d 8%,#e77e2d 76%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #ffa33d 8%,#e77e2d 76%); /* IE10+ */
+    background: linear-gradient(45deg, #ffa33d 8%,#e77e2d 76%); /* W3C */
+}
+nav .right-menu .favorites{
+    background: -moz-linear-gradient(45deg, #ff853a 8%, #e55c0b 77%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(8%,#ff853a), color-stop(77%,#e55c0b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #ff853a 8%,#e55c0b 77%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #ff853a 8%,#e55c0b 77%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #ff853a 8%,#e55c0b 77%); /* IE10+ */
+    background: linear-gradient(45deg, #ff853a 8%,#e55c0b 77%); /* W3C */
+}
+nav .right-menu .photos{
+    background: -moz-linear-gradient(45deg, #7ebad2 8%, #3a87a5 77%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(8%,#7ebad2), color-stop(77%,#3a87a5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #7ebad2 8%,#3a87a5 77%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #7ebad2 8%,#3a87a5 77%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #7ebad2 8%,#3a87a5 77%); /* IE10+ */
+    background: linear-gradient(45deg, #7ebad2 8%,#3a87a5 77%); /* W3C */
+}
+nav .right-menu .share{
+    background: -moz-linear-gradient(45deg, #375a82 8%, #1c3a5c 78%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(8%,#375a82), color-stop(78%,#1c3a5c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #375a82 8%,#1c3a5c 78%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #375a82 8%,#1c3a5c 78%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #375a82 8%,#1c3a5c 78%); /* IE10+ */
+    background: linear-gradient(45deg, #375a82 8%,#1c3a5c 78%); /* W3C */
+}
+
+i{
+    margin: 15px;
+    font-size: 25px;
+}
+
+nav{
+    position: relative;
+    top: 10px;
+    left: 600px;
+    }
+
+/*SUBMENU*/
+nav .right-menu li .submenu{
+    width:100px;
+    position: absolute;
+    left: 18px;
+    /*display: none;*/
+    opacity: 0; /*para hacerlo transparente*/
+    /*height: 0; no sirve para ocultarlo*/
+    bottom: 100px;
+    transition: all 900ms ease;
+    -moz-transition: all 900ms ease;
+    -webkit-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+    -ms-transition: all 900ms ease;
+    z-index: -1;
+    transform: translateY(100px);
+    margin-top: 100px;
+}
+
+nav>.right-menu>li:hover .submenu{
+    display:table;
+    opacity: 1;
+    /*height: auto;  no sirve para ocultarlo*/
+    top: 21px;
+    transform: rotateY(360deg);
+}
+
+nav .right-menu li .submenu ul{
+    width: 1%;
+    display: table-cell;
+     list-style: none;
+}
+
+nav > .right-menu > li > .submenu > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+nav > .right-menu > li > .submenu > ul > li{
+    text-decoration: none;
+    box-shadow: none;
+    width: 200px;
+    margin-bottom: 0;
+    text-align: center;
+    background: white;
+    border-left: 20px solid orange;
+    border-right: 20px solid orange;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+}
+nav > .right-menu > li > .submenu > ul > li:first-child{
+    border-top: 20px solid orange;
+    border-bottom: 0;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    -webkit-border-bottom-left-radius: 0px;
+}
+
+nav .another-side{
+    position: absolute;
+    left: 125px;
+    height: 309px;
+    width: 239px;
+    background-color: whitesmoke;
+    z-index: -10;
+    top: 0;
+}
+
+.another-side header{
+    -webkit-box-shadow: -7px 10px 5px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -7px 10px 5px -8px rgba(0,0,0,0.75);
+    box-shadow: -7px 10px 5px -8px rgba(0,0,0,0.75);
+    padding: 0;
+    margin: 0;
+}
+
+.another-side header h1{
+    line-height: 74px;
+    text-align: center;
+    font-size: 25px;
+}

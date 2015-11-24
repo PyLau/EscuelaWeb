@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wall</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="lightbox2-master/src/css/lightbox.css">
+	<link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
+</head>
+<body>
+	<!-- http://lokeshdhakar.com/projects/lightbox2/#getting-started -->
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<a href="img/1cupcakes_chocolate.jpg" class="thumbnail" data-lightbox="gallery" data-title="Chocolate Cupcake">
+					<img src="img/1cupcakes_chocolate.jpg" alt="" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="img/2mariposa_g.jpg" class="thumbnail" data-lightbox="gallery" data-title="Chocolate Butterfly">
+					<img src="img/2mariposa_g.jpg" alt="" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="img/3milk_chocolate_heart_mold.jpg" class="thumbnail" data-lightbox="gallery" data-title="Milk Chocolate Heart Mold">
+					<img src="img/3milk_chocolate_heart_mold.jpg" alt="" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="img/4cupcakes_de_red_velvet_y_chocolate_blanco.jpg" class="thumbnail" data-lightbox="gallery" data-title="Red Velvet And Chocolate">
+					<img src="img/4cupcakes_de_red_velvet_y_chocolate_blanco.jpg" alt="" class="img-responsive">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<a href="img/5red-velvet-cupcakes-R112125-ss.jpg" class="thumbnail" data-lightbox="gallery" data-title="Chocolate 1">
+					<img src="img/5red-velvet-cupcakes-R112125-ss.jpg" alt="" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="img/6trufas-de-chocolate-blanco.jpg" class="thumbnail" data-lightbox="gallery" data-title="Chocolate 1">
+					<img src="img/6trufas-de-chocolate-blanco.jpg" alt="" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="img/7Gourmet-Chocolates.jpg" class="thumbnail" data-lightbox="gallery" data-title="Chocolate 1">
+					<img src="img/7Gourmet-Chocolates.jpg" alt="" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="img/8imagenes-fresas-con-chocolate4.jpg" class="thumbnail" data-lightbox="gallery" data-title="Chocolate 1">
+					<img src="img/8imagenes-fresas-con-chocolate4.jpg" alt="" class="img-responsive">
+				</a>
+			</div>
+		</div>
+	</section>
+	<div id="carousel" class="owl-carousel">
+		<div>
+			<img src="img/1cupcakes_chocolate.jpg" alt="">
+		</div>
+		<div>
+			<img src="img/2mariposa_g.jpg" alt="" >
+		</div>
+		<div>
+			<img src="img/4cupcakes_de_red_velvet_y_chocolate_blanco.jpg" alt="" >
+		</div>
+		<div>
+			<img src="img/5red-velvet-cupcakes-R112125-ss.jpg" alt="" >
+		</div>
+		<div>
+			<img src="img/6trufas-de-chocolate-blanco.jpg" alt="">
+		</div>
+		<div>
+			<img src="img/7Gourmet-Chocolates.jpg" alt="">
+		</div>
+		<div>
+			<img src="img/8imagenes-fresas-con-chocolate4.jpg" alt="">
+		</div>
+	</div>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="lightbox2-master/src/js/lightbox.js"></script>
+	<script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+	  		$("#carousel").owlCarousel({
+	  			 //Basic Speeds
+    			slideSpeed : 200,
+    			paginationSpeed : 500,
+	  			//Autoplay
+   				autoPlay : true,
+   				//Pagination
+    			pagination : false,
+    			  // Navigation
+    			navigation : true,
+    			navigationText : ["<",">"]
+	  		});
+		});
+	</script>
+</body>
+</html>
