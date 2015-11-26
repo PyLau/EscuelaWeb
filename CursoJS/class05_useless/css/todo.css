@@ -1,0 +1,17 @@
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.ghost {
+  opacity: .75;
+}
+
+.task-done {
+  text-decoration: line-through;
+  opacity: .75;
+}
