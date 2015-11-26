@@ -26,15 +26,11 @@
     </div>
   </body>
   <script type="text/javascript">
-    var sources = {
-      1: [{value: 11, text: 11}, {value: 111, text: 111}], 
-    };
-
   $('#list1').editable({
     source: [{value: 1, text: 'text1'}, {value: 2, text: 'text2'}],
     title: 'Select',
     success: function(response, newValue) {
-       $('#list2').editable('option', 'source', sources[newValue]);  
+       $('#list2').editable('option', 'source');  
     }
   });
 
