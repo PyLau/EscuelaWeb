@@ -46,7 +46,6 @@
       </div>
     </div>
     
-
     <div id="hidden-item" class="hidden">
       <li class="task-li">
         <div class="name">
@@ -56,30 +55,24 @@
               <a href="#" class="todo-text">New task (Click here to edit)</a>
             </div>
             <div class="form-group" id="options">
-
+                <div class="dropdown hidden">
+                  Move task to 
+                  <a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Boards
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  </ul>
+                </div>
             </div>
           </form>
         </div>
         <div class="actions">
           <a href="#" id="export-option"><span class="glyphicon glyphicon-export"></span></a>
-          <a href=""><span class="glyphicon glyphicon-trash"></span></a>
+          <span class="glyphicon glyphicon-trash"></span>
         </div>
       </li>
     </div>
-
-    <div id="hidden-select" class="hidden">
-      <div class="dropdown">
-        Move task to 
-        <a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-          Boards
-          <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dLabel">
-          <li><a href="#"> Board 1 </a></li>
-        </ul>
-      </div>
-    </div>
-
     <script src="js/miniproject.js"></script>
   </body>
 </html>

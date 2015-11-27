@@ -1,4 +1,38 @@
 var boardCreated = 0;
+var taskCreated = 0;
+
+function addTask(){
+    var taskElement = $('#hidden-item').children();
+    tasknumber = taskCreated;
+    taskElement.prop('id', 'taskID_' + taskCreated++);
+    //Añado la tarea
+    $(this).parent().parent().find('#task-list').append(taskElement.clone());
+    //Asocio el evento click al boton
+    tarea = $('#taskID_'+tasknumber);
+    $('#taskID_'+tasknumber+' .actions #export-option').click(function() {
+      $(this).parent().parent().find('.dropdown').toggleClass('hidden');
+    });
+    console.log(tarea.parent().parent());
+    //Lleno el dropdown
+    $('#board-list .main-board').each(function(){
+      if (tarea.parent().parent().find('header a').text() != $(this).find('header a').text()){
+        tarea.find('.dropdown-menu').append('<li><a href="#" onclick="moveTask('+$(this).attr('id')+')">'+$(this).find('header a').text()+'</a></li>');
+      }
+    });
+
+    // tarea.find('.dropdown-menu li').each(function(){
+    //   $(this).click(function() {
+    //     id = $(this).text();
+    //     console.log($('board-list header a #'+id));
+    //     console.log($(this).parent().parent().parent().parent().parent().parent());
+    //   });
+    // });
+}
+
+function moveTask(){
+  console.log($(this));
+}
+
 $(document).ready(function(){
   $('#board-new').focus();
   //Create board
@@ -11,33 +45,12 @@ $(document).ready(function(){
     $('#board-new').val('');
     $('#hidden-board .board-text').text(boardText);
     var boardElement = $('#hidden-board').children();
+    boardElement.prop('id', 'boardID_' + boardCreated++);
     $('#board-list').append(boardElement.clone());
     $('.board-text').editable({type: 'text', title: 'Enter title'});
-    boardCreated++;
   });
 
   //Create task inside board
-  $('#board-list').on('click','.board-plus-btn', function (evt){
-    var taskElement = $('#hidden-item').children();
-    $(this).parent().parent().find('#task-list').append(taskElement.clone());
-    $('#task-list #task-text').prop('id','');
-    $.fn.editable.defaults.mode = 'inline';
-    $('.todo-text').editable({value: ""});
-    $('#task-list').on('click','.glyphicon-trash', function (evt){
-      $(this).parent().parent().remove();
-    });
-      //Dropdown option inside task
-    $('#task-list').on('click','.glyphicon-export', function (evt){
-      var optionElement = $('#hidden-select').children();
-      $(this).parent().parent().parent().find('#options').append(optionElement.clone());
-    });
-
-
-  }); 
-
-  $('.dropdown-toggle').dropdown()
-
-
-
+  $('#board-list').on('click','.board-plus-btn', addTask); 
 });
 
