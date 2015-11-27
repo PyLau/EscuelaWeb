@@ -110,3 +110,10 @@ li.task-li .actions{
 div#popover10667{
 	top: -15px;
 }
+.dropdown, .dropup{
+	position: static;
+    padding: 15px 0px 7px 45px;
+}
+.dropdown-menu{
+    position: relative;
+}

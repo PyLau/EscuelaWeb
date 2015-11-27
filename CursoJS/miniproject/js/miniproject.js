@@ -13,6 +13,7 @@ $(document).ready(function(){
     var boardElement = $('#hidden-board').children();
     $('#board-list').append(boardElement.clone());
     $('.board-text').editable({type: 'text', title: 'Enter title'});
+    boardCreated++;
   });
 
   //Create task inside board
@@ -20,24 +21,23 @@ $(document).ready(function(){
     var taskElement = $('#hidden-item').children();
     $(this).parent().parent().find('#task-list').append(taskElement.clone());
     $('#task-list #task-text').prop('id','');
-    // $.fn.editable.defaults.mode = 'inline';
+    $.fn.editable.defaults.mode = 'inline';
     $('.todo-text').editable({value: ""});
-    $('#export-option').editable({
-      source: [{value: 1, text: 'text1'}, {value: 2, text: 'text2'}],
-      title: 'Select1',
+    $('#task-list').on('click','.glyphicon-trash', function (evt){
+      $(this).parent().parent().remove();
     });
+      //Dropdown option inside task
+    $('#task-list').on('click','.glyphicon-export', function (evt){
+      var optionElement = $('#hidden-select').children();
+      $(this).parent().parent().parent().find('#options').append(optionElement.clone());
+    });
+
 
   }); 
 
-  // $('#options').on('click','.glyphicon-pencil'), function (evt){
-  //   var optionElement = $('#hidden-options').children();
-  //    $(this).find('#options').append(optionElement.clone());
-  // }); 
+  $('.dropdown-toggle').dropdown()
 
 
-
-  $('#task-list').on('click','.task-btn', function (evt){
-    $(this).parent().remove();
-  });
 
 });
+
