@@ -1,5 +1,5 @@
+var boardCreated = 0;
 $(document).ready(function(){
-
   $('#board-new').focus();
   //Create board
   $('#board-form').submit(function(evt){
@@ -20,14 +20,21 @@ $(document).ready(function(){
     var taskElement = $('#hidden-item').children();
     $(this).parent().parent().find('#task-list').append(taskElement.clone());
     $('#task-list #task-text').prop('id','');
-    $.fn.editable.defaults.mode = 'inline';
+    // $.fn.editable.defaults.mode = 'inline';
     $('.todo-text').editable({value: ""});
+    $('#export-option').editable({
+      source: [{value: 1, text: 'text1'}, {value: 2, text: 'text2'}],
+      title: 'Select1',
+    });
+
   }); 
 
   // $('#options').on('click','.glyphicon-pencil'), function (evt){
   //   var optionElement = $('#hidden-options').children();
   //    $(this).find('#options').append(optionElement.clone());
   // }); 
+
+
 
   $('#task-list').on('click','.task-btn', function (evt){
     $(this).parent().remove();
