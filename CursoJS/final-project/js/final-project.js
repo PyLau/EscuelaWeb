@@ -1,5 +1,7 @@
 var videoList = [];
-function showVideos(videoList) {
+var nextPage = '';
+function showVideos(videoList, nextPage) {
+  console.log(nextPage);
   $('#form-result').empty();
   var i;
   for (i = 0; i < videoList.length; i++) {
@@ -12,6 +14,7 @@ function showVideos(videoList) {
     $('#form-result').append(clone);
     $('#form-result #video-title').prop('id', '');
     $('#form-result #video-description').prop('id', '');
+    $('#form-result #video-description').prop('id', '');  
     $('#form-result #video-img').prop('id', '');
     clone.hide();
     clone.delay(900 * i).fadeIn();
@@ -29,8 +32,8 @@ $(document).ready(function() {
     var key = 'h6zhvv3FNLmsh9LwUQDBFfd5RQx0p1sJNNjjsn9lm07QNdykrQ';
     
     var ignJson = {
-      maxResults: 15,
-      query: videoStr
+      query: videoStr,
+      pageToken: nextPage
     };
     $('.spiffy').show();
     $.ajax({
@@ -44,7 +47,8 @@ $(document).ready(function() {
     })
     .done(function (response) {
       console.log(response);
-      showVideos(response.data);
+      nextPage = response.control.nextPageToken;
+      showVideos(response.data, nextPage);
     })
     .fail(function (error) {
       console.error('AJAX failed',error);
