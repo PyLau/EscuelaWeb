@@ -45,6 +45,8 @@ $(document).ready( function () {
     refreshCounters();
   });
       
+
+      
   $('#task-list').on('click', '.task-btn', function (evt) {
     $(this).parent().remove();
     taskCreated--;
