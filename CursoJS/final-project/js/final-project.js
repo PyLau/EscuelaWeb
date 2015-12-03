@@ -43,16 +43,13 @@ $(document).ready(function() {
       }
     })
     .done(function (response) {
-      videoList = response;
-      showVideos(videoList);
+      console.log(response);
+      showVideos(response.data);
     })
     .fail(function (error) {
-      console.error('AJAX failed');
+      console.error('AJAX failed',error);
     })
     .complete(function (data) {
-      console.log('AJAX complete',data);
-      var response =  JSON.parse(data.responseText);
-      console.log('aquita el next', response.control.nextPageToken);
       $('.spiffy').hide();
     });
     
